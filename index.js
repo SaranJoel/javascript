@@ -11,14 +11,25 @@
 // document.getElementById('para_1').textContent = `${senName} your age is ${senNUm}`;
 
 //this ia easy way to take user input
-let userName;
-userName = window.prompt(`What's your User Name`);
+// let userName;
+// userName = window.prompt(`What's your User Name`);
 
-document.getElementById('para_1').textContent = `this is para ${userName}`;
+// document.getElementById('para_1').textContent = `this is para ${userName}`;
 
-//this is professionl way
-let inputText
-document.getElementById('submit').onclick = function(){
-    inputText = document.getElementById('inputtext').value
-    document.getElementById('h1').textContent = `HI this is ${inputText} and you are in H1`
+// //this is professionl way
+// let inputText
+// document.getElementById('submit').onclick = function(){
+//     inputText = document.getElementById('inputtext').value
+//     document.getElementById('h1').textContent = `HI this is ${inputText} and you are in H1`
+// }
+
+const PI  = 3.147
+let radius;
+let curcumference
+
+document.getElementById('myButton').onclick = function(){
+    radius = document.getElementById('myText').value;
+    radius = Number(radius);
+    curcumference = 2* PI *radius;
+    document.getElementById('h3').textContent = `the curcumference of the circle with radius ${radius} is ${curcumference}`
 }
